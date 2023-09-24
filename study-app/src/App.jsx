@@ -17,7 +17,7 @@ function App() {
         >
           Learn React
         </a>
-        <div>hello sekai</div>
+        <div>ohayo sekai</div>
       </header>
     </div>
   );
