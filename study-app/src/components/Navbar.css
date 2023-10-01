@@ -1,0 +1,45 @@
+/* Gaya dasar untuk komponen Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1db954;
+  padding: 10px 20px;
+  color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 250px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 14px;
+}
+
+/* Media query untuk tampilan ponsel */
+@media (max-width: 768px) {
+  .navbar {
+    margin-left: 0; /* Menghilangkan margin saat tampilan pada ponsel */
+  }
+}

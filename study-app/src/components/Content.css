@@ -1,0 +1,45 @@
+/* Gaya dasar untuk komponen Content */
+.content {
+  margin-top: 20px;
+  margin-left: 270px;
+  padding: 20px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.playlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.playlist-item {
+  width: 200px;
+  margin: 10px;
+}
+
+.playlist-img {
+  width: 100%;
+  height: auto;
+}
+
+.playlist-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.curator {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Media query untuk tampilan ponsel */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0; /* Menghilangkan margin saat tampilan pada ponsel */
+  }
+}

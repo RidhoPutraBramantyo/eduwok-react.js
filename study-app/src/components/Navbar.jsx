@@ -1,57 +1,24 @@
 import React from "react";
+import "./Navbar.css"; // Impor file CSS yang berisi gaya tambahan
 
 function Navbar() {
-  const navbarStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    backgroundColor: "#1DB954",
-    padding: "10px 20px",
-    color: "#fff",
-    boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-    marginLeft: "250px", // Menyesuaikan dengan lebar Sidebar
-  };
-
-  const logoStyle = {
-    display: "flex",
-    alignItems: "center",
-  };
-
-  const logoImgStyle = {
-    width: "40px",
-    height: "40px",
-    marginRight: "10px",
-  };
-
-  const userProfileStyle = {
-    display: "flex",
-    alignItems: "center",
-  };
-
-  const profileImgStyle = {
-    width: "30px",
-    height: "30px",
-    marginRight: "10px",
-    borderRadius: "50%",
-  };
-
   return (
-    <div style={navbarStyle}>
-      <div style={logoStyle}>
+    <div className="navbar">
+      <div className="logo">
         <img
           src="link-gambar-logo-spotify.png"
           alt="Logo Spotify"
-          style={logoImgStyle}
+          className="logo-img"
         />
         <h1>Spotify</h1>
       </div>
-      <div style={userProfileStyle}>
+      <div className="user-profile">
         <img
           src="link-gambar-profil.png"
           alt="Profil User"
-          style={profileImgStyle}
+          className="profile-img"
         />
-        <span style={{ fontSize: "14px" }}>Nama Pengguna</span>
+        <span className="user-name">Nama Pengguna</span>
       </div>
     </div>
   );

@@ -1,42 +1,22 @@
 import React from "react";
+import "./Sidebar.css"; // Impor file CSS yang berisi gaya tambahan
 
 function Sidebar() {
-  const sidebarStyle = {
-    width: "250px",
-    backgroundColor: "#333",
-    color: "#fff",
-    padding: "20px",
-    position: "fixed",
-    top: "0", // Membuat Sidebar melayang di atas layar
-    left: "0", // Membuat Sidebar melayang di kiri layar
-    height: "100vh", // Mengisi seluruh tinggi viewport
-  };
-
-  const sidebarItemStyle = {
-    marginBottom: "10px",
-  };
-
-  const sidebarLinkStyle = {
-    color: "#fff",
-    textDecoration: "none",
-    fontSize: "16px",
-  };
-
   return (
-    <div style={sidebarStyle}>
+    <div className="sidebar">
       <h2>Menu</h2>
-      <div style={sidebarItemStyle}>
-        <a href="#" style={sidebarLinkStyle}>
+      <div className="sidebar-item">
+        <a href="#" className="sidebar-link">
           Beranda
         </a>
       </div>
-      <div style={sidebarItemStyle}>
-        <a href="#" style={sidebarLinkStyle}>
+      <div className="sidebar-item">
+        <a href="#" className="sidebar-link">
           Cari
         </a>
       </div>
-      <div style={sidebarItemStyle}>
-        <a href="#" style={sidebarLinkStyle}>
+      <div className="sidebar-item">
+        <a href="#" className="sidebar-link">
           Pustaka
         </a>
       </div>

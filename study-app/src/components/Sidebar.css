@@ -1,0 +1,28 @@
+/* Gaya dasar untuk komponen Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.sidebar-item {
+  margin-bottom: 10px;
+}
+
+.sidebar-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Media query untuk tampilan ponsel */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Mengubah lebar saat tampilan pada ponsel */
+  }
+}
