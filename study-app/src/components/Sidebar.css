@@ -8,6 +8,37 @@
   top: 0;
   left: 0;
   height: 100vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+.show {
+  transform: translateX(0);
+}
+
+.hide {
+  transform: translateX(-250px);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.toggle-button i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-button:hover i {
+  transform: scale(1.2);
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .sidebar-item {
@@ -20,9 +51,23 @@
   font-size: 16px;
 }
 
+/* Ikon tombol toggle saat sidebar disembunyikan */
+.hide .toggle-button i {
+  transform: rotate(180deg);
+}
+
 /* Media query untuk tampilan ponsel */
 @media (max-width: 768px) {
   .sidebar {
-    width: 100%; /* Mengubah lebar saat tampilan pada ponsel */
+    width: 0;
+    display: none;
+  }
+
+  .show {
+    transform: translateX(0);
+  }
+
+  .toggle-button {
+    display: block;
   }
 }

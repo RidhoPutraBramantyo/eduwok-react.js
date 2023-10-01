@@ -1,77 +1,40 @@
 import React from "react";
+import "./Playbar.css"; // Impor file CSS yang berisi gaya tambahan
 
 function Playbar() {
-  const playbarStyle = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    backgroundColor: "#333",
-    color: "#fff",
-    padding: "10px",
-  };
-
-  const songInfoStyle = {
-    display: "flex",
-    alignItems: "center",
-  };
-
-  const songCoverStyle = {
-    width: "60px",
-    height: "60px",
-    marginRight: "10px",
-  };
-
-  const songNameStyle = {
-    fontSize: "16px",
-    fontWeight: "bold",
-  };
-
-  const artistStyle = {
-    fontSize: "14px",
-  };
-
-  const controlsStyle = {
-    display: "flex",
-  };
-
-  const controlButtonStyle = {
-    backgroundColor: "#1DB954",
-    color: "#fff",
-    width: "30px",
-    height: "30px",
-    borderRadius: "50%",
-    marginRight: "10px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    cursor: "pointer",
-  };
-
-  const volumeControlStyle = {
-    display: "flex",
-    alignItems: "center",
-  };
-
   return (
-    <div style={playbarStyle}>
-      <div style={songInfoStyle}>
-        <img
-          src="link-gambar-lagu.jpg"
-          alt="Lagu Cover"
-          style={songCoverStyle}
-        />
-        <div>
-          <h3 style={songNameStyle}>Nama Lagu</h3>
-          <p style={artistStyle}>Artis</p>
+    <div className="playbar">
+      <div className="playbar-content">
+        {/* Tambahkan elemen-elemen playbar sesuai kebutuhan Anda */}
+        <div className="playbar-info">
+          <img
+            src="link-gambar-lagu.jpg"
+            alt="Lagu Cover"
+            className="song-img"
+          />
+          <div className="song-details">
+            <h3 className="song-title">Judul Lagu</h3>
+            <p className="artist">Nama Artis</p>
+          </div>
+        </div>
+        <div className="playbar-controls">
+          {/* Tambahkan tombol kontrol (play, pause, next, prev, dll.) */}
+          <button className="control-button">Play</button>
+          <button className="control-button">Pause</button>
+          <button className="control-button">Next</button>
+          <button className="control-button">Prev</button>
+        </div>
+        <div className="playbar-volume">
+          {/* Tambahkan kontrol volume */}
+          <input
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            className="volume-slider"
+          />
         </div>
       </div>
-      <div style={controlsStyle}>
-        {/* Tombol pemutar seperti play, pause, dan lainnya */}
-        <div style={controlButtonStyle}>Play</div>
-        <div style={controlButtonStyle}>Pause</div>
-        {/* Tambahkan tombol pemutar lainnya sesuai kebutuhan Anda */}
-      </div>
-      <div style={volumeControlStyle}>{/* Kontrol volume dan lainnya */}</div>
     </div>
   );
 }
