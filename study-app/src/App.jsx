@@ -1,21 +1,16 @@
-import logo from "./img/sharingan.png";
 import "./App.css";
-import Komponen from "./Materi/Komponen";
+import Navbar from "./components/Navbar";
+import Content from "./components/Content";
+import Sidebar from "./components/Sidebar";
+import Playbar from "./components/Playbar";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Komponen />
+      <Navbar></Navbar>
+      <Content></Content>
+      <Sidebar></Sidebar>
+      <Playbar></Playbar>
     </div>
   );
 }
