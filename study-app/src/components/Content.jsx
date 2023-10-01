@@ -1,12 +1,12 @@
 import React from "react";
-import "./Content.css"; // Impor file CSS yang berisi gaya tambahan
+import "./Content.css";
 
 function Content() {
   return (
     <div className="content">
       <h2 className="header">Featured Playlists</h2>
       <div className="playlist">
-        {/* Tambahkan item playlist sesuai kebutuhan Anda */}
+        {/* Tambahkan item playlist sesuai kebutuhan  */}
         <div className="playlist-item">
           <img
             src="link-gambar-playlist.jpg"

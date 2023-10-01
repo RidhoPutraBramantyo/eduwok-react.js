@@ -1,11 +1,11 @@
 import React from "react";
-import "./Playbar.css"; // Impor file CSS yang berisi gaya tambahan
+import "./Playbar.css";
 
 function Playbar() {
   return (
     <div className="playbar">
       <div className="playbar-content">
-        {/* Tambahkan elemen-elemen playbar sesuai kebutuhan Anda */}
+        {/*  elemen-elemen playbar sesuai kebutuhan  */}
         <div className="playbar-info">
           <img
             src="link-gambar-lagu.jpg"
@@ -18,14 +18,14 @@ function Playbar() {
           </div>
         </div>
         <div className="playbar-controls">
-          {/* Tambahkan tombol kontrol (play, pause, next, prev, dll.) */}
+          {/*  tombol kontrol (play, pause, next, prev, dll.) */}
           <button className="control-button">Play</button>
           <button className="control-button">Pause</button>
           <button className="control-button">Next</button>
           <button className="control-button">Prev</button>
         </div>
         <div className="playbar-volume">
-          {/* Tambahkan kontrol volume */}
+          {/*  kontrol volume */}
           <input
             type="range"
             min="0"

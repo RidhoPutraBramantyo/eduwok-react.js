@@ -1,4 +1,3 @@
-/* Gaya dasar untuk komponen Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -37,9 +36,9 @@
   font-size: 14px;
 }
 
-/* Media query untuk tampilan ponsel */
+/* Media query untuk tampilan smartphone */
 @media (max-width: 768px) {
   .navbar {
-    margin-left: 0; /* Menghilangkan margin saat tampilan pada ponsel */
+    margin-left: 0;
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.css"; // Impor file CSS yang berisi gaya tambahan
+import "./Navbar.css";
 
 function Navbar() {
   return (

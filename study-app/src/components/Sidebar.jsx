@@ -33,7 +33,7 @@ function Sidebar() {
           Pustaka
         </a>
       </div>
-      {/* Tambahkan item menu lainnya sesuai kebutuhan Anda */}
+      {/*  item menu lainnya sesuai kebutuhan  */}
     </div>
   );
 }
