@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Playbar.css";
+import { BsFillPauseCircleFill, BsFillPlayCircleFill } from "react-icons/bs";
+import {
+  TbPlayerTrackNextFilled,
+  TbPlayerTrackPrevFilled,
+  TbPlayerPlayFilled,
+  TbPlayerPauseFilled,
+  TbPlayerPause,
+} from "react-icons/tb";
 
 function Playbar() {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlayPause = () => {
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <div className="playbar">
       <div className="playbar-content">
@@ -19,10 +33,15 @@ function Playbar() {
         </div>
         <div className="playbar-controls">
           {/*  tombol kontrol (play, pause, next, prev, dll.) */}
-          <button className="control-button">Play</button>
-          <button className="control-button">Pause</button>
-          <button className="control-button">Next</button>
-          <button className="control-button">Prev</button>
+          <button className="control-button">
+            <TbPlayerTrackPrevFilled />
+          </button>{" "}
+          <button className="control-button" onClick={togglePlayPause}>
+            {isPlaying ? <TbPlayerPauseFilled /> : <TbPlayerPlayFilled />}
+          </button>
+          <button className="control-button">
+            <TbPlayerTrackNextFilled />
+          </button>
         </div>
         <div className="playbar-volume">
           {/*  kontrol volume */}

@@ -39,13 +39,24 @@
 }
 
 .control-button {
-  background-color: #555;
-  color: #fff;
+  background-color: green;
+  color: black;
   border: none;
-  padding: 5px 10px;
+  border-radius: 100%;
+  padding: 10px 10px;
   margin: 0 5px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 20px;
+}
+.control-button:hover {
+  background-color: rgb(6, 173, 6);
+  color: black;
+  border: none;
+  border-radius: 100%;
+  padding: 10px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .playbar-volume {
@@ -81,6 +92,7 @@
   .control-button {
     padding: 3px 6px;
     font-size: 12px;
+    color: green;
   }
 
   .volume-slider {
