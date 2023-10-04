@@ -12,7 +12,7 @@ function Content() {
           <div className="playlist-item">
             <div className="playlist-imgBox">
               <img
-                src="link-gambar-playlist.jpg"
+                src={playlist.cover}
                 alt="Playlist Cover"
                 className="playlist-img"
               />

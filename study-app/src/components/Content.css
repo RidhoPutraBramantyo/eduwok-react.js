@@ -31,9 +31,13 @@
 }
 
 .playlist-name {
+  max-width: 150px;
   font-size: 18px;
   font-weight: bold;
   margin-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .curator {

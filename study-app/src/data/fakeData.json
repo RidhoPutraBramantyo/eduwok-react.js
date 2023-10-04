@@ -59,8 +59,8 @@
   "playlists": [
     {
       "id": 1,
-      "cover": "https://example.com/playlist1.jpg",
-      "playlistName": "Playlist Favorit John",
+      "cover": "../img/futuristic1.jpg",
+      "playlistName": "Favorit John",
       "curatedbyusername": "John Doe",
       "ownerId": 1,
       "songs": [101, 102, 104]
