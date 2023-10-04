@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { SiAudiomack } from "react-icons/si";
 
 function Navbar() {
   return (
@@ -9,7 +10,7 @@ function Navbar() {
         <div className="logo">
           <img
             src="link-gambar-logo-spotify.png"
-            alt="Logo"
+            alt="logo"
             className="logo-img"
           />
           <h1>My Audio</h1>

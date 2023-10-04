@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "age": 30
+    },
+    {
+      "id": 2,
+      "name": "Alice Smith",
+      "email": "alice@example.com",
+      "age": 25
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "email": "bob@example.com",
+      "age": 35
+    }
+  ],
+  "musics": [
+    {
+      "id": 101,
+      "title": "Song 1",
+      "artist": "Artist 1",
+      "description": "Deskripsi dari lagu 1. Ini adalah lagu yang sangat populer dengan melodi yang indah.",
+      "imageUrl": "https://example.com/song1.jpg"
+    },
+    {
+      "id": 102,
+      "title": "Song 2",
+      "artist": "Artist 2",
+      "description": "Deskripsi dari lagu 2. Lagu ini memiliki lirik yang mendalam dan harmoni yang menawan.",
+      "imageUrl": "https://example.com/song2.jpg"
+    },
+    {
+      "id": 103,
+      "title": "Song 3",
+      "artist": "Artist 3",
+      "description": "Deskripsi dari lagu 3. Lagu ini adalah campuran dari beberapa genre musik yang berbeda.",
+      "imageUrl": "https://example.com/song3.jpg"
+    },
+    {
+      "id": 104,
+      "title": "Song 4",
+      "artist": "Artist 1",
+      "description": "Deskripsi dari lagu 4. Ini adalah lagu hit dari Artist 1 yang dikenal luas.",
+      "imageUrl": "https://example.com/song4.jpg"
+    },
+    {
+      "id": 105,
+      "title": "Song 5",
+      "artist": "Artist 4",
+      "description": "Deskripsi dari lagu 5. Lagu ini sering dimainkan di konser dan acara musik terkenal.",
+      "imageUrl": "https://example.com/song5.jpg"
+    }
+  ],
+  "playlists": [
+    {
+      "id": 1,
+      "cover": "https://example.com/playlist1.jpg",
+      "playlistName": "Playlist Favorit John",
+      "curatedbyusername": "John Doe",
+      "ownerId": 1,
+      "songs": [101, 102, 104]
+    },
+    {
+      "id": 2,
+      "cover": "https://example.com/playlist2.jpg",
+      "playlistName": "Playlist Populer Alice",
+      "curatedbyusername": "Alice Smith",
+      "ownerId": 2,
+      "songs": [102, 103, 105]
+    },
+    {
+      "id": 3,
+      "cover": "https://example.com/playlist3.jpg",
+      "playlistName": "Playlist Rock Bob",
+      "curatedbyusername": "Bob Johnson",
+      "ownerId": 3,
+      "songs": [103, 104]
+    }
+  ]
+}

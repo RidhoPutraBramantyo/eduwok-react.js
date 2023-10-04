@@ -8,14 +8,17 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   margin-left: 250px;
 }
+
 .white-space {
   width: 250px;
 }
+
 .nav {
   width: 591.38px;
   display: flex;
   justify-content: space-between;
 }
+
 .logo {
   display: flex;
   align-items: center;
