@@ -59,7 +59,7 @@
   "playlists": [
     {
       "id": 1,
-      "cover": "../img/futuristic1.jpg",
+      "cover": "futuristic1.jpg",
       "playlistName": "Favorit John",
       "curatedbyusername": "John Doe",
       "ownerId": 1,
@@ -67,7 +67,7 @@
     },
     {
       "id": 2,
-      "cover": "https://example.com/playlist2.jpg",
+      "cover": "futuristic2.jpg",
       "playlistName": "Playlist Populer Alice",
       "curatedbyusername": "Alice Smith",
       "ownerId": 2,
@@ -75,7 +75,7 @@
     },
     {
       "id": 3,
-      "cover": "https://example.com/playlist3.jpg",
+      "cover": "futuristic3.jpg",
       "playlistName": "Playlist Rock Bob",
       "curatedbyusername": "Bob Johnson",
       "ownerId": 3,

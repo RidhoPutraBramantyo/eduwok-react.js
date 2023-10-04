@@ -12,7 +12,7 @@ function Content() {
           <div className="playlist-item">
             <div className="playlist-imgBox">
               <img
-                src={playlist.cover}
+                src={require(`../img/${playlist.cover}`)}
                 alt="Playlist Cover"
                 className="playlist-img"
               />
