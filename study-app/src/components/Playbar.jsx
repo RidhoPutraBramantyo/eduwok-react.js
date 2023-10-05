@@ -23,12 +23,12 @@ function Playbar() {
         <div className="playbar-info">
           <img
             src="link-gambar-lagu.jpg"
-            alt="Lagu Cover"
+            alt="Audio Cover"
             className="song-img"
           />
           <div className="song-details">
-            <h3 className="song-title">Judul Lagu</h3>
-            <p className="artist">Nama Artis</p>
+            <h3 className="song-title">Title Audio</h3>
+            <p className="artist">Creator</p>
           </div>
         </div>
         <div className="playbar-controls">

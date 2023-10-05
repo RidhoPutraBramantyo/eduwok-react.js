@@ -23,6 +23,24 @@ function Content() {
           </div>
         ))}
       </div>
+      <h2 className="header">Recent Audio</h2>
+      <div className="playlist">
+        {/* Tambahkan item playlist sesuai kebutuhan  */}
+        {fakeData.musics.map((music) => (
+          <div className="playlist-item">
+            <div className="playlist-imgBox">
+              <img
+                src={require(`../img/${music.imageUrl}`)}
+                alt="Playlist Cover"
+                className="playlist-img"
+              />
+            </div>
+
+            <h3 className="playlist-name">{music.title}</h3>
+            <p className="curator">{music.artist}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

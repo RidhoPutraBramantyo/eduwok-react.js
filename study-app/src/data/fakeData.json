@@ -25,35 +25,35 @@
       "title": "Song 1",
       "artist": "Artist 1",
       "description": "Deskripsi dari lagu 1. Ini adalah lagu yang sangat populer dengan melodi yang indah.",
-      "imageUrl": "https://example.com/song1.jpg"
+      "imageUrl": "futuristic6.jpg"
     },
     {
       "id": 102,
       "title": "Song 2",
       "artist": "Artist 2",
       "description": "Deskripsi dari lagu 2. Lagu ini memiliki lirik yang mendalam dan harmoni yang menawan.",
-      "imageUrl": "https://example.com/song2.jpg"
+      "imageUrl": "futuristic5.jpg"
     },
     {
       "id": 103,
       "title": "Song 3",
       "artist": "Artist 3",
       "description": "Deskripsi dari lagu 3. Lagu ini adalah campuran dari beberapa genre musik yang berbeda.",
-      "imageUrl": "https://example.com/song3.jpg"
+      "imageUrl": "futuristic4.jpg"
     },
     {
       "id": 104,
       "title": "Song 4",
       "artist": "Artist 1",
       "description": "Deskripsi dari lagu 4. Ini adalah lagu hit dari Artist 1 yang dikenal luas.",
-      "imageUrl": "https://example.com/song4.jpg"
+      "imageUrl": "futuristic3.jpg"
     },
     {
       "id": 105,
       "title": "Song 5",
       "artist": "Artist 4",
       "description": "Deskripsi dari lagu 5. Lagu ini sering dimainkan di konser dan acara musik terkenal.",
-      "imageUrl": "https://example.com/song5.jpg"
+      "imageUrl": "futuristic6.jpg"
     }
   ],
   "playlists": [
@@ -76,7 +76,7 @@
     {
       "id": 3,
       "cover": "futuristic3.jpg",
-      "playlistName": "Playlist Rock Bob",
+      "playlistName": "Playlist Elmac",
       "curatedbyusername": "Bob Johnson",
       "ownerId": 3,
       "songs": [103, 104]
