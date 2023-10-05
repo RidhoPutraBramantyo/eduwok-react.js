@@ -51,6 +51,16 @@
   font-size: 14px;
 }
 
+/* Animasi rotasi logo */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Media query untuk tampilan perangkat seluler (max-width: 768px) */
 @media (max-width: 768px) {
   /* Menyembunyikan white-space pada perangkat seluler */
@@ -69,8 +79,20 @@
     width: 100%;
   }
 
-  /* Mengubah ukuran logo pada tampilan ponsel */
+  /* Mengubah ukuran logo pada tampilan ponsel dan menjaga animasi rotasi tetap ada */
+  .rotating-image {
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/react_logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    animation: spin 4s linear infinite;
+    margin-right: 10px;
+  }
+
+  /* Mengubah ukuran font pada tampilan ponsel */
   .logo h1 {
-    font-size: 16px; /* Ubah ukuran font sesuai kebutuhan Anda */
+    font-size: 16px;
   }
 }
