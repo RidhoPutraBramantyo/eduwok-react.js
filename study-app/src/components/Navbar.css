@@ -1,54 +1,40 @@
-.navbar {
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  background-color: grey;
-  /* padding: 10px 20px; */
-  color: #fff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  margin-left: 250px;
-}
-
-.white-space {
-  width: 250px;
-}
-
-.nav {
-  width: 591.38px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo-img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-
-.user-profile {
-  display: flex;
-  align-items: center;
-}
-
-.profile-img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  border-radius: 50%;
-}
-
-.user-name {
-  font-size: 14px;
-}
-
-/* Media query untuk tampilan smartphone */
+/* Media query untuk tampilan ponsel (max-width: 768px) */
 @media (max-width: 768px) {
   .navbar {
-    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-left .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo h1 {
+    font-size: 14px; /* Ubah ukuran font sesuai kebutuhan Anda */
+  }
+
+  .nav-right .user-profile {
+    display: flex;
+    align-items: center;
+  }
+
+  .profile-img {
+    width: 30px; /* Sesuaikan ukuran gambar profil sesuai kebutuhan Anda */
+    height: 30px; /* Sesuaikan ukuran gambar profil sesuai kebutuhan Anda */
+    margin-right: 5px; /* Sesuaikan margin sesuai kebutuhan Anda */
+  }
+
+  .user-name {
+    font-size: 12px; /* Ubah ukuran font sesuai kebutuhan Anda */
   }
 }
