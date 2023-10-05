@@ -50,8 +50,8 @@
   font-size: 20px;
 }
 .control-button:hover {
-  background-color: rgb(6, 173, 6);
-  color: black;
+  background-color: whitesmoke;
+  color: lightsteelblue;
   border: none;
   border-radius: 100%;
   padding: 10px 10px;
@@ -93,7 +93,8 @@
   .control-button {
     padding: 3px 6px;
     font-size: 12px;
-    color: green;
+    background-color: black;
+    color: white;
   }
 
   .volume-slider {
