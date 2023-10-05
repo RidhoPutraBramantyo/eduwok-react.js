@@ -1,40 +1,76 @@
-/* Media query untuk tampilan ponsel (max-width: 768px) */
+/* Gaya dasar navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  justify-content: space-between; /* Tambahkan ini untuk menjaga logo dan user profile tetap di kedua sisi */
+}
+
+/* Gaya untuk menyembunyikan white-space pada perangkat seluler */
+.white-space {
+  display: none;
+}
+
+/* Gaya untuk logo dan kontennya */
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Gaya untuk gambar yang berputar */
+.rotating-image {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/react_logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  animation: spin 4s linear infinite;
+  margin-right: 10px; /* Tambahkan margin untuk memisahkan gambar dari teks */
+}
+
+/* Gaya untuk logo yang lebih kecil pada perangkat seluler */
+.logo h1 {
+  font-size: 14px;
+}
+
+/* Gaya untuk gambar profil */
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px; /* Tambahkan margin kiri agar tidak terlalu dekat dengan teks */
+}
+
+/* Gaya untuk nama pengguna */
+.user-name {
+  font-size: 14px;
+}
+
+/* Media query untuk tampilan perangkat seluler (max-width: 768px) */
 @media (max-width: 768px) {
+  /* Menyembunyikan white-space pada perangkat seluler */
+  .white-space {
+    display: none;
+  }
+
+  /* Mengatur margin kiri navbar menjadi 0 untuk menampilkan navbar di tengah */
   .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    margin-left: 0;
+    justify-content: center; /* Mengatur konten ke tengah */
   }
 
-  .nav-left,
-  .nav-right {
+  /* Mengatur lebar navbar agar sesuai dengan layar ponsel */
+  .nav {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
   }
 
-  .nav-left .logo {
-    display: flex;
-    align-items: center;
-  }
-
+  /* Mengubah ukuran logo pada tampilan ponsel */
   .logo h1 {
-    font-size: 14px; /* Ubah ukuran font sesuai kebutuhan Anda */
-  }
-
-  .nav-right .user-profile {
-    display: flex;
-    align-items: center;
-  }
-
-  .profile-img {
-    width: 30px; /* Sesuaikan ukuran gambar profil sesuai kebutuhan Anda */
-    height: 30px; /* Sesuaikan ukuran gambar profil sesuai kebutuhan Anda */
-    margin-right: 5px; /* Sesuaikan margin sesuai kebutuhan Anda */
-  }
-
-  .user-name {
-    font-size: 12px; /* Ubah ukuran font sesuai kebutuhan Anda */
+    font-size: 16px; /* Ubah ukuran font sesuai kebutuhan Anda */
   }
 }
