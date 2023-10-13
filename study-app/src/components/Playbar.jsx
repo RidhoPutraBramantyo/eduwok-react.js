@@ -8,6 +8,8 @@ import {
   TbPlayerPauseFilled,
   TbPlayerPause,
 } from "react-icons/tb";
+import { BsHeart, BsHeartFill } from "react-icons/bs";
+
 import data from "../data/fakeData.json";
 
 function Playbar() {
@@ -47,7 +49,12 @@ function Playbar() {
             </h3>
             <p className="artist">{data.musics[currentSongIndex].artist}</p>
           </div>
+          <div className="whistlist">
+            <BsHeart className="heart-icon" />
+            <BsHeartFill />
+          </div>
         </div>
+
         <div className="playbar-controls">
           {/*  tombol kontrol (play, pause, next, prev, dll.) */}
           <button className="control-button" onClick={playPreviousSong}>
